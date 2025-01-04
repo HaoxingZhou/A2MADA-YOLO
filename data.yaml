@@ -1,0 +1,15 @@
+train: ./UPID/images/train # train images
+val: ./UPID/images/val # val images
+test: ./FINet/images/test # test images (optional)
+target: ./FINet/images/train
+
+# Labels folders
+train_labels: ./UPID/labels/train # train labels
+val_labels: ./UPID/labels/val # val labels
+test_labels: ./FINet/labels/test
+
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+# Classes
+nc: 3  # number of classes
+names: ['Normal_insulator', 'Defective_insulator', 'Insulators_fault']  # class names
